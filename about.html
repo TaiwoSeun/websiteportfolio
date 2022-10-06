@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!------About------>
+	<section class="about">
+		<div class="nav-links">
+			<nav>
+				<a href="home.html"><img src="images/logo.png"></a>
+				<div class="nav" id="navLinks">
+					<i class="fa fa-times" onclick="closeMenu()"></i>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="home.html#project">Projects</a></li>
+						<li><a href="#important">Contact</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="openMenu()"></i>
+			</nav>
+		</div>
+		<div class="about-container">
+			<div class="about-row">
+				<div class="about-col-1">
+					<marquee>Creative Go-Getter</marquee>
+					<img src="images/reals.png">
+				</div>
+				<div class="about-col-2">
+					<h3>Hello, I'm Taiwo Seun</h3>
+					<p>I'm a front-end developer. I solve user problems and turn ideas or designs into reality. As a front-end developer I passionately focus on nice implementation of the user interface and incorporating astonish functionalities to meet user's and business needs.
+					</p><br>
+					<p>I have spent much time to learn and uderstand the concept and structural process of front-end development from a very basic level to an advance level. I upskill myself by engaging in new technical challenge and it helps me to have a vast knowledge as a fontend developer.</p><br>
+					<p>Finally, I love meeting new people that are tech enthusiast to brainstorm on ideas in order to solve a specific problems in a unique way. More so, most times during my leisure I play video games and at times I see movies.</p><br>
+					<a href="https://wa.me/+2348060441859">Get In Touch</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+		<div id="important">
+			<h4 class="mainpoint">For openings or collaboration?</h4>
+			<h4 class="point">Kindly reach out to me.</h4>
+			<a href="https://wa.me/+2348060441859" class="contact-btn">Get In Touch</a>
+			<div class="media">
+				<a href="https://www.instagram.com/benjozylee/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.m.me/seunbenjamin.omotola1"><i class="fa fa-facebook-f"></i></a>
+				<a href="https://twitter.com/Benajozy?t=fLeJYcXMMxrqMK49AG-NfA&s=08"><i class="fa fa-twitter"></i></a>
+				<a href="https://t.me/b3njozy"><i class="fa fa-telegram"></i></a>
+			</div>
+			<div class="navigate-back">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="home.html#project">Projects</a>
+				<a href="#important">Contact</a>
+			</div>
+			<div class="copyright">
+				<p>&copy Taiwo Seun 2022</p>
+			</div>
+		</div>
+
+	<!-------JavaScript------->
+	<script type="text/javascript">
+		var navlink = document.getElementById('navLinks');
+
+		function openMenu(argument) {
+			navlink.style.top = '0';
+		}
+		function closeMenu(argument) {
+			navlink.style.top = '-220px'
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="upper">
+		<div class="nav-links">
+			<nav>
+				<a href="home.html"><img src="images/logo.png"></a>
+				<div class="nav" id="navLinks">
+					<i class="fa fa-times" onclick="closeMenu()"></i>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#important">Contact</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="openMenu()"></i>
+			</nav>
+		</div>
+		<!------Information----->
+		<div id="information">
+			<div class="container">
+				 <div class="row">
+				 	<div class="info-col-1">
+				 		<img src="images/reals.png">
+				 		<div class="post">
+				 			<h4>Hello Everyone!</h4>
+				 			<p>I'm Taiwo Seun, a Front-End Developer.</p>
+				 		</div>
+				 	</div>
+				 	<div class="info-col-2">
+				 		<h2 class="sub-title">I implement designs</h2>
+				 		<p>I proffer solution to problems of users and businesses by developing new user-facing features to address their needs, determining the web structures and design of the web pages, also building an interactive interface the users see and interact with.</p><br>
+						<p>As a front-end developer, being creative and understanding of the web process from the scratch to deployment is the key to solving users problem. Also making a website responsive allows it to be accessible to all users regardless of their devices.</p><br>
+						<p>Implementing wonderful designs and an outstanding functionalities in order to solve a specific problem of users and businesses in an interactive way is my job and this motivates me.</p><br><br>
+						<a href="about.html" class="btn">Read More</a>
+				 	</div>
+				 </div>
+			</div>
+		</div>
+	</div>
+<!-------My Projects------->
+	<div id="project">
+		<div class="twocontainer">
+			<h3 class="title">Projects</h3>
+			<p class="paragraph">Some of my projects.</p>
+			<div class="project-list">
+				<div class="project">
+					<img src="images/schools.jpg">
+					<div class="top-layer">
+						<h3><em>E-Learning</em></h3>
+						<p>Learn software development online at your own pace from your comfort.</p>
+					</div>
+				</div>
+				<div class="project">
+					<img src="images/accessoriess.jpg">
+					<div class="top-layer">
+						<h3><em>Shop Online</em></h3>
+						<p>Shop online for quality and affordable computer accessories.</p>
+					</div>
+				</div>
+				<div class="project">
+					<img src="images/socials.jpg">
+					<div class="top-layer">
+						<h3><em>Social Networking</em></h3>
+						<p>connect and build a strong relationship with people around the globe.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--------------Contact-Me--------------->
+		<hr>
+		<div id="important">
+			<h4 class="mainpoint">For openings or collaboration?</h4>
+			<h4 class="point">Kindly reach out to me.</h4>
+			<a href="https://wa.me/+2348060441859" class="contact-btn">Get In Touch</a>
+			<div class="media">
+				<a href="https://www.instagram.com/benjozylee/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.m.me/seunbenjamin.omotola1"><i class="fa fa-facebook-f"></i></a>
+				<a href="https://twitter.com/Benajozy?t=fLeJYcXMMxrqMK49AG-NfA&s=08"><i class="fa fa-twitter"></i></a>
+				<a href="https://t.me/b3njozy"><i class="fa fa-telegram"></i></a>
+			</div>
+			<div class="navigate-back">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="#project">Projects</a>
+				<a href="#important">Contact</a>
+			</div>
+			<div class="copyright">
+				<p>&copy Taiwo Seun 2022</p>
+			</div>
+		</div>
+
+
+	<!-------JavaScript------->
+	<script type="text/javascript">
+		var navlink = document.getElementById('navLinks');
+
+		function openMenu(argument) {
+			navlink.style.top = '0';
+		}
+		function closeMenu(argument) {
+			navlink.style.top = '-270px'
+		}
+	</script>
+</body>
+</html>
